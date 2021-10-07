@@ -1,44 +1,47 @@
 # NCM Dump
 [[食用方法]](https://github.com/airline12138/ncmdump_php#食用方法)
 
-   针对[原项目(ncmdump)](https://github.com/SomeBottle/ncm)进行了修改完善 在其原有代码基础上修复并增加了一些功能
+   针对[原项目(ncmdump)](https://github.com/SomeBottle/ncm)
+   进行了修改完善 在其原有代码基础上修复并增加了一些功能
 
-## 增加的功能
-   * [add] 批量Dump
-   * [fix] 玄学报错(缺少ogg3库引入)
-   * [fix] flac格式无法写入封面图片
-   * [add] mp3,flac格式写入歌曲元数据(歌曲名,艺术家/音乐家,专辑名)
-   * [优化] 返回机制从echo改为return,class类库中终于不再直接输出内容
-   * [优化] 更新了getid3类库
+## Add
+   * [add] Batch dump
+   * [fix] Error (lack of ogg3 library introduction)
+   * [fix] Flac format cannot write cover image
+   * [add] Write song metadata in mp3, flac format
+   * [improve] The return mechanism is changed from echo to return, and finally no longer directly output content in the class library
+   * [improve] Updated the getid3 class library
 
-## 更新日志
-   * [fix] 批量dump报错无输入文件
-   * [add] 判断输入文件夹是否存在 不存在则退出执行
-   * [add] 判断输出文件夹是否存在 不存在则自动创建
+## Changelog
+   * [fix] Fix the bug that batch dump reports errors and there is no input file
+   * [add] Judge whether the input folder exists and does not exist, then exit the execution
+   * [add] Judge whether the output folder exists, it will be created automatically if it does not exist
 
-## 需要的拓展/需要开启的函数/依赖软件
-   * php_openssl (不是很清楚 应该是用于解密)
-   * php_exif (操作图像文件)
+## Extensions needed/functions that need to be turned on/dependent software
+   * php_openssl (Decrypt and restore)
+   * php_exif (Manipulate image files)
 
-   * shell_exec (getid3库操作metaflac)
-   * exec (用于操作文件)
-   * metaflac (用于写入flac格式元数据 在CLI安装 `yum install flac -y` / `apt install flac -y`) (感谢@Jochen233指出此处描述错误 包名为flac而非先前版本的metaflac)
+   * shell_exec (getid3 library operation metadata falc)
+   * exec (Used to manipulate files)
+   * flac (Used to write metadata in flac format 
+   * Install in CLI:
+   * ( `yum install flac -y` / `apt install flac -y`)
 
-## 原项目使用的Class
+## Class
    * [getID3](https://github.com/JamesHeinrich/getID3)
    * [hex2str](https://www.cnblogs.com/wangluochong/p/11383000.html)
    * [xor](https://www.cnblogs.com/dannywang/p/5316768.html)
 
-## 原项目参考的项目
+## Reference
    * [NCMdump-py](https://github.com/bolitao/ncm)  
    * [ncmdump-php](https://github.com/juzi5201314/ncmdump)
 
-## 食用方法
+## Using
    单文件dump `php ncm.php <filepath> <dealwithid3>`
 
-   批量dump(文件夹内所有歌曲) `php dump.php` 需手动修改PHP文件中的`输入NCM路径,输出NCM路径,输出dump后文件路径`(懒得适配CLI)
+   批量dump(All Song) `php dump.php` 需手动修改PHP文件中的`输入NCM路径,输出NCM路径,输出dump后文件路径`(懒得适配CLI)
 
    [保姆级使用教程](https://blog.qcmoe.com/program/ncmDump.html)
 
-## 鸣谢
-   * [@Jochen233](https://blog.qcmoe.com) 发现并报告了bug及README的描述错误, 给予了更新意见, 为程序撰写了保姆级使用教程
+## Thanks
+   * [@Jochen233](https://blog.qcmoe.com).
