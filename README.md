@@ -37,11 +37,11 @@
    * [ncmdump-php](https://github.com/juzi5201314/ncmdump)
 
 ## Using
-   单文件dump `php ncm.php <filepath> <dealwithid3>`
+   Single dump `php ncm.php <filepath> <dealwithid3>`
 
-   批量dump(All Song) `php dump.php` 需手动修改PHP文件中的`输入NCM路径,输出NCM路径,输出dump后文件路径`(懒得适配CLI)
+   All dump(All Song) `php dump.php` 需手动修改PHP文件中的`输入NCM路径,输出NCM路径,输出dump后文件路径`(CLI Is Not Adapted)
 
-   [保姆级使用教程](https://blog.qcmoe.com/program/ncmDump.html)
+   [Using](https://blog.qcmoe.com/program/ncmDump.html)
 
 ## Thanks
    * [@Jochen233](https://blog.qcmoe.com).
