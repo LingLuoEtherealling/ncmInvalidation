@@ -1,8 +1,8 @@
 # NCM Dump
-[[食用方法]](https://github.com/airline12138/ncmdump_php#食用方法)
+[(Using)](https://github.com/airline12138/ncmdump_php#食用方法)
 
-   针对[原项目(ncmdump)](https://github.com/SomeBottle/ncm)
-   进行了修改完善 在其原有代码基础上修复并增加了一些功能
+   [(ncmdump)](https://github.com/SomeBottle/ncm)
+   Improvement And Enhancement
 
 ## Add
    * [add] Batch dump
